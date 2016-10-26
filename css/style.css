@@ -2,6 +2,13 @@ body {
   margin: 0;
   padding: 0;
 }
+ul,
+h1,
+h2,
+p {
+  padding: 0;
+  margin: 0;
+}
 
 .clearfix::after {
   content: "";
@@ -68,6 +75,130 @@ body {
 .content-right {
   float: right;
   width: 300px;
+}
+
+.title {
+  margin-bottom: 55px;
+}
+
+.title h1 {
+  margin-bottom: 25px;
+}
+
+.bread-crumbs {
+  margin: 0;
+}
+
+.price-title {
+  margin-bottom: 65px;
+}
+
+.discription {
+  margin-bottom: 65px;
+}
+
+.discription:last-child {
+  padding-bottom: 15px;
+}
+
+.discription-left {
+  float: left;
+  width: 460px;
+}
+
+.discription-right {
+  float: right;
+  width: 460px;
+}
+
+.discription-header {
+  margin-bottom: 40px;
+}
+
+.item-left {
+  float: left;
+  width: 460px;
+}
+
+.item-right {
+  float: right;
+  width: 390px;
+}
+
+.images-extra li {
+  float: left;
+  padding-right: 20px;
+}
+
+.images-extra li:last-child {
+  padding-right: 0;
+}
+
+.item-description {
+  margin-bottom: 40px;
+}
+
+.item-info {
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.available {
+  float: left;
+}
+
+.article-number {
+  float: right;
+}
+
+.item-price {
+  margin-bottom: 65px;
+}
+
+.item-set h2 {
+  margin-bottom: 35px;
+}
+
+.sidebar {
+  float: left;
+  width: 220px;
+  min-height: 600px;
+}
+
+.vendors {
+  min-height: 260px;
+  margin-bottom: 50px;
+}
+
+.groups-goods {
+  min-height: 165px;
+  margin-bottom: 50px;
+}
+
+.care-catalog {
+  float: right;
+  width: 700px;
+  min-height: 600px;
+  font-size: 0;
+}
+
+.item-catalog {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  width: 220px;
+  min-height: 285px;
+  font-size: 16px;
+}
+
+.item-catalog:nth-child(3n) {
+  padding-right: 0;
+}
+
+.pages-nav {
+  margin-top: 25px;
+  font-size: 16px;
 }
 
 .main-footer {
