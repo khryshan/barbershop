@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Barbershop</title>
   </head>
@@ -40,7 +44,7 @@
     </header>
     <main class="container">
       <div class="index-logo">
-        <img src="img/index-logo.png" width="370px" height="204px" alt="Barbershop "Borodinski"">
+        <img src="img/logo-borodinski.png" width="370px" height="204px" alt="Barbershop "Borodinski"">
       </div>
       <section class="features clearfix">
         <div class="features-item">
@@ -73,11 +77,13 @@
         </div>
         <div class="content-right">
           <h2 class="content-name">фотогалерея</h2>
-          <figure class="gallery-content">
-            <img src="img/fhoto-1.png" width="100px" height="100px" alt="photo-1" />
-          </figure>
-          <button class="btn gallery-prev">назад</button>
-          <button class="btn gallery-next">вперед</button>
+          <div class="gallery">
+            <figure class="gallery-content">
+              <img src="img/content-img.jpg" width="286px" height="164px" alt="photo-1" />
+            </figure>
+            <button class="btn gallery-prev">назад</button>
+            <button class="btn gallery-next">вперед</button>
+          </div>
         </div>
       </div>
       <div class="content clearfix">
@@ -92,7 +98,7 @@
             сб-вс: 10:00 - 19:00
           </p>
           <a href="#" class="btn">как проехать</a>
-          <a href="#" class="btn">обратная связь</a>
+          <a href="#" class="btn btn-conect">обратная связь</a>
         </div>
         <div class="content-right">
           <h2 class="content-name">записаться</h2>
@@ -103,7 +109,7 @@
             <input type="text" name="name" value="" placeholder="ваше имя">
             <input type="tel" name="phone" value="" placeholder="телефон">
           </form>
-          <button class="btn" type="submit" name="button">отправить</button>
+          <button class="btn btn-send" type="submit" name="button">отправить</button>
         </div>
       </div>
     </main>
@@ -128,6 +134,29 @@
         </section>
       </div>
     </footer>
+
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content-title">Личный кабинет</h2>
+    <p>Введите пожалуйста свой логин и пароль</p>
+    <form class="form-login" action="https://echo.htmlacademy.ru/" method="get">
+      <input class="field-login" type="text" name="login" placeholder="Логин">
+      <input class="field-password" type="password" name="password" placeholder="Пароль">
+      <label class="login-checkbox">
+        <input type="checkbox" name="remember">
+        <span class="checkbox-indicator"></span>
+        Запомни меня
+      </label>
+      <a href="#" class="restore">Я забыл пароль!</a>
+      <button class="btn" type="submit">Войти</button>
+    </form>
+  </div>
+
+  <div class="modal-content-map">
+    <button class="modal-content-close" type="button" title="Закрыть"></button>
+    <div id="yandex-map"></div>
+  </div>
+  <div class="modal-overlay"></div>
 
 
   </body>
