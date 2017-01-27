@@ -1,7 +1,5 @@
 /*кнопки соц сетей. добавить изменение фона при наведении*/
 
-/*button of the link htmlacademy in footer*/
-
 /*finish price-list page*/
 
 body {
@@ -17,12 +15,19 @@ body {
   background: #000000 url('../img/body-bg.jpg') no-repeat center top;
 }
 
+.inner-page {
+  color: #000000;
+
+  background: #f8f5f2 url('../img/content.jpg') repeat;
+}
 
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
+
+/*-------------------------------Header------------------------------*/
 
 .main-header {
   margin-bottom: 60px;
@@ -32,17 +37,37 @@ body {
   background-color: #000000;
 }
 
+.inner-page .main-header {
+  margin-bottom: 55px;
+}
+
 .container {
   width: 960px;
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
-
 }
 
 .main-nav {
   float: left;
   width: 780px;
+}
+
+.main-nav .logo-inner {
+  float: left;
+  width: 115px;
+  height: 24px;
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+
+.logo-inner img {
+  width: 115px;
+  height: 24px;
+}
+
+.main-nav .logo-inner:hover {
+  background-color: none;
 }
 
 .main-nav ul{
@@ -61,7 +86,7 @@ body {
   vertical-align: top;
 }
 
-.main-nav a{
+.main-nav a {
   display: block;
   padding: 25px 20px;
 
@@ -69,8 +94,33 @@ body {
   text-decoration: none;
 }
 
-.main-nav a:hover{
+.main-nav ul a:hover {
   background-color: #242424;
+}
+
+.main-nav .active {
+  position: relative;
+  background-color: none;
+}
+
+.main-nav .active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  left: 20px;
+
+  height: 5px;
+  background-color: #ffffff;
+}
+
+.main-nav .active a:hover {
+  background: none;
+}
+
+.main-nav .active span {
+  display: block;
+  padding: 25px 20px;
 }
 
 .user-block {
@@ -113,6 +163,8 @@ body {
 .login:hover {
   background-color: #242424;
 }
+
+/*-----------------------------Main-Page---------------------------*/
 
 .index-logo {
   width: 370px;
@@ -318,43 +370,192 @@ body {
   width: 100%;
 }
 
-.title {
+/*--------------------------------Price-------------------------------*/
+
+.inner-title {
   margin-bottom: 55px;
 }
 
-.title h1 {
+.inner-title h1 {
+  margin: 0;
   margin-bottom: 25px;
+  padding: 0;
+
+  font-size: 30px;
+  line-height: 42px;
 }
 
 .bread-crumbs {
   margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
-.price-title {
+.bread-crumbs li {
+  position: relative;
+
+  display: inline;
+  padding-right: 40px;
+}
+
+.bread-crumbs li::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 17px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.bread-crumbs .current::after {
+  display: none;
+}
+
+.bread-crumbs a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.bread-crumbs a:hover {
+  text-decoration: underline;
+}
+
+.bread-crumbs .current {
+  color: #aba9a7;
+}
+
+.inner-content {
+  margin-bottom: 75px;
+}
+
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.inner-content p {
+  margin: 14px 0;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding: 10px 15px;
+
+  border: 2px solid #000000;
+}
+
+.big-heading {
+  margin-top: 55px;
   margin-bottom: 65px;
+
+  text-align: center;
 }
 
-.discription {
-  margin-bottom: 65px;
+.big-heading h2 {
+  position: relative;
+  z-index: 2;
+
+  display: inline;
+
+  margin: 0;
+  padding: 0 25px;
+
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+
+  background: #f8f5f2 url('../img/content.jpg') repeat;
 }
 
-.discription:last-child {
-  padding-bottom: 15px;
+.big-heading::after {
+  content: "";
+  position: relative;
+  top: -25px;
+  z-index: 1;
+  display: block;
+  border-bottom: 2px solid #000000;
 }
 
-.discription-left {
+.list-name {
+  margin 14px 0px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.list-name li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.list-name li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.table-price {
+  width: 100%;
+}
+
+.table-price td {
+  width: 50%;
+}
+
+.table-price td:last-child {
+  text-align: center;
+}
+
+.inner-columns {
+  margin: 60px  0;
+}
+
+.inner-column-left,
+.inner-column-right {
+  width: 460px;
+}
+
+.inner-column-left {
   float: left;
-  width: 460px;
 }
 
-.discription-right {
+.inner-column-right {
   float: right;
-  width: 460px;
 }
 
-.discription-header {
-  margin-bottom: 40px;
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+  margin-top: 0;
 }
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+  margin-bottom: 0;
+}
+
+.short-text {
+  padding-right: 85px;
+}
+
+/*-----------------------------------------------------------------*/
 
 .item-left {
   float: left;
@@ -441,6 +642,8 @@ body {
   margin-top: 25px;
   font-size: 16px;
 }
+
+/*-----------------------------Footer-----------------------------*/
 
 .main-footer {
   margin-top: 65px;
