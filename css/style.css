@@ -18,7 +18,7 @@ body {
 .inner-page {
   color: #000000;
 
-  background: #f8f5f2 url('../img/content.jpg') repeat;
+  background: #f8f5f2 url('../img/content-bg.jpg') repeat;
 }
 
 .clearfix::after {
