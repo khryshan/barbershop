@@ -230,7 +230,7 @@ body {
   color: #000000;
 
   background: url('../img/div-line.png') no-repeat center,
-  #f8f5f2 url('../img/content.jpg');
+  #f8f5f2 url('../img/content-bg.jpg');
 }
 
 .content-name {
@@ -472,7 +472,7 @@ body {
   line-height: 48px;
   text-align: center;
 
-  background: #f8f5f2 url('../img/content.jpg') repeat;
+  background: #f8f5f2 url('../img/') repeat;
 }
 
 .big-heading::after {
@@ -975,7 +975,7 @@ body {
 
   color: #000000;
 
-  background: #f8f5f2 url('../img/bg-content.jpg') no-repeat;
+  background: #f8f5f2 url('../img/content-bg.jpg') no-repeat;
   box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.7);
 }
 
@@ -1157,7 +1157,7 @@ body {
   margin-top: -287px;
   margin-left: -390px;
 
-  background: #aba9a7 url('../img/map.jpg') no-repeat;
+  background-color: #aba9a7;
   border: 7px solid #ffffff;
   box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.7);
 }
@@ -1174,5 +1174,8 @@ body {
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.5);
+}
 
+.modal-content-show {
+  display: block;
 }
